@@ -11,7 +11,7 @@ inputs:
   ssh_private_key:
     description: SSH private key used to connect to the docker host
     required: true
-  args:
+  deploy_args:
     description: Deployment command args.
     required: true
   stack_file_name:

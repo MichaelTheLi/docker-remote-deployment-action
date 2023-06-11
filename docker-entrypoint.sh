@@ -23,7 +23,7 @@ if [ -z "$INPUT_SSH_PRIVATE_KEY" ]; then
     exit 1
 fi
 
-if [ -z "$INPUT_ARGS" ]; then
+if [ -z "$INPUT_DEPLOY_ARGS" ]; then
   echo "Input input_args is required!"
   exit 1
 fi
@@ -75,7 +75,7 @@ fi
 echo "Command: ${DEPLOYMENT_COMMAND} pull"
 ${DEPLOYMENT_COMMAND} ${DEPLOYMENT_COMMAND_OPTIONS} pull
 
-echo "Command: ${DEPLOYMENT_COMMAND} ${INPUT_ARGS}"
-${DEPLOYMENT_COMMAND} ${DEPLOYMENT_COMMAND_OPTIONS} ${INPUT_ARGS}
+echo "Command: ${DEPLOYMENT_COMMAND} ${INPUT_DEPLOY_ARGS}"
+${DEPLOYMENT_COMMAND} ${DEPLOYMENT_COMMAND_OPTIONS} ${INPUT_DEPLOY_ARGS}
 
 
