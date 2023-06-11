@@ -32,7 +32,7 @@ inputs:
 
 runs:
   using: docker
-  image: docker://MichaelTheLi/docker-remote-deployment-action:v1.3
+  image: docker://MichaelTheLi/docker-remote-deployment-action:v0.5
 
 
 branding:
